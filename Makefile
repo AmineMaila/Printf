@@ -6,7 +6,7 @@
 #    By: mmaila <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 20:01:04 by mmaila            #+#    #+#              #
-#    Updated: 2023/11/07 21:24:42 by mmaila           ###   ########.fr        #
+#    Updated: 2023/11/09 15:57:19 by mmaila           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ all : $(NAME)
 $(NAME) : $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-%.o : %.c
+%.o : %.c libftprintf.h
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean :

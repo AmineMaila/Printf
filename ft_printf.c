@@ -6,7 +6,7 @@
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 14:47:15 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/08 18:02:55 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/09 15:54:31 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,8 @@ int	ft_printf(const char *str, ...)
 
 int main()
 {
-	int i = ft_printf("%p\n", "");
-	int j = printf("%p\n", "");
-    printf("ft%d\n", i);
-	printf("%d\n", j);
-	//printf("     %d\n", ft_printf("%d   %d", 15));
-	//printf("     %d\n", printf("%d   %d", 15));
-	//printf("count : %d\n", ft_printf("% % % % % % % % %"));
+	fclose(stdout);
+    
+    
+    fprintf(stderr, "%d %d\n", printf("Hek"), ft_printf("Hek"));
 }*/
