@@ -6,13 +6,13 @@
 /*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:04:24 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/09 17:03:10 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/09 17:27:17 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	intspecifier(char c, va_list args, int *pcount)
+static int	intspecifier(char c, va_list args, int *pcount)
 {
 	int	x;
 
@@ -36,7 +36,7 @@ int	intspecifier(char c, va_list args, int *pcount)
 	return (1);
 }
 
-int	size_tspecifier(char c, va_list args, int *pcount)
+static int	size_tspecifier(char c, va_list args, int *pcount)
 {
 	size_t	p;
 
@@ -51,7 +51,7 @@ int	size_tspecifier(char c, va_list args, int *pcount)
 	return (1);
 }
 
-int	uintspecifier(char c, va_list args, int *pcount)
+static int	uintspecifier(char c, va_list args, int *pcount)
 {
 	unsigned int	u;
 
@@ -76,7 +76,7 @@ int	uintspecifier(char c, va_list args, int *pcount)
 	return (1);
 }
 
-int	charspecifier(char c, va_list args, int *pcount)
+static int	charspecifier(char c, va_list args, int *pcount)
 {
 	char	*s;
 
