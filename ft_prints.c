@@ -6,7 +6,7 @@
 /*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:04:24 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/17 18:05:38 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/24 17:22:16 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,7 @@ static int	uintspecifier(char c, va_list args, int *pcount)
 static int	charspecifier(char c, va_list args, int *pcount)
 {
 	char	*s;
+
 	if (c == 's')
 	{
 		s = va_arg(args, char *);
@@ -116,11 +117,3 @@ int	ft_prints(char c, va_list args, int *pcount)
 	}
 	return (2);
 }
-/*
-#include <stdio.h>
-int main()
-{
-	char *xd;
-	xd = "Hello";
-	printf("%p", xd);
-}*/
