@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 14:47:15 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/09 17:16:40 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/17 18:10:16 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,11 @@ int	ft_printf(const char *str, ...)
 
 int main()
 {
-	//fclose(stdout);
-    
-	printf(" %d\n", ft_printf("Hello %s World", (char *)NULL));
-	printf(" %d\n", printf("Hello %s World", (char *)NULL));
+	fclose(1);
+    int fd = open("%d", )
+	int n  = ft_printf("Hello World");
+	// fprintf(stderr, " %d\n", ft_printf("Hello World"));
+	// fprintf(stderr, " %d\n", printf("Hello World"));
     
     //fprintf(stderr, "%d %d\n", printf("Hek"), ft_printf("Hek"));
 }*/

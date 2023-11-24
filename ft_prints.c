@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_prints.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmaila <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: mmaila <mmaila@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:04:24 by mmaila            #+#    #+#             */
-/*   Updated: 2023/11/09 17:27:17 by mmaila           ###   ########.fr       */
+/*   Updated: 2023/11/17 18:05:38 by mmaila           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ static int	uintspecifier(char c, va_list args, int *pcount)
 static int	charspecifier(char c, va_list args, int *pcount)
 {
 	char	*s;
-
 	if (c == 's')
 	{
 		s = va_arg(args, char *);
